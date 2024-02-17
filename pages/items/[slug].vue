@@ -4,7 +4,7 @@
 <template>
   <div>
     <h1>detail</h1>
-    <ContentQuery :path="$route.params.slug" find="one" v-slot="{ data }">
+    <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
       <ContentRenderer :value="data" />
     </ContentQuery>
   </div>
