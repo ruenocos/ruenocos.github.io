@@ -7,8 +7,11 @@ export default defineConfig({
     ],
     theme: {
         colors: {
-            'a': '#111',
-            'b': '#FF00FF'
+            'primary': '#C48CF8',
+            'secondary': '#8CF893',
+            'tertiary': '#C5B8E6',
+            'text': '#FFFFFF',
+            'background': '#221F26'
         }
     }
 });
