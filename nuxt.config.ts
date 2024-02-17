@@ -7,7 +7,8 @@ export default defineNuxtConfig({
   },
   modules: [
       '@nuxt/content',
-      '@nuxthq/studio'
+      '@nuxthq/studio',
+      '@unocss/nuxt'
   ],
   content: {
 
