@@ -30,6 +30,12 @@ Subcategories
 - UX/UI
 - Motion Design
 
+# libraries
+- https://github.com/Cuberto/mouse-follower
+- https://greensock.com/gsap/
+- 
+
+
 ## Credits
 
 *special thanks to [Daan Henke](https://github.com/daanhenke)*
