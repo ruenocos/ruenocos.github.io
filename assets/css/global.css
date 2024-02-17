@@ -1,1 +1,15 @@
 @import "@unocss/reset/tailwind.css";
+
+body {
+    @apply font-sans bg-background text-text font-body min-h-screen;
+    @apply flex justify-center;
+}
+
+#__nuxt {
+    @apply flex flex-col w-screen h-screen items-center;
+}
+
+:root {
+    --color-primary: theme('colors.primary');
+    --color-secondary: theme('colors.secondary');
+}

@@ -6,7 +6,7 @@
 </script>
 
 <template>
-  <div>`
+  <div>
     <h1>list</h1>
     <NuxtLink :to="item._path" v-for="item in data" :key="item.slug">
       <ContentRenderer :value="item" />
