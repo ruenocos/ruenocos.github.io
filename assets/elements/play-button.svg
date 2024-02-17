@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="play-button" transform="translate(-1013 -336)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(1013 336)" fill="#c48cf8"/>
+    <g id="MDI_play" data-name="MDI / play" transform="translate(1015 338)">
+      <g id="Boundary" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+        <rect width="16" height="16" stroke="none"/>
+        <rect x="0.5" y="0.5" width="15" height="15" fill="none"/>
+      </g>
+      <path id="Path_play" data-name="Path / play" d="M8,5.14v9.333l7.333-4.667Z" transform="translate(-3.333 -1.807)" fill="#191a1e"/>
+    </g>
+  </g>
+</svg>
