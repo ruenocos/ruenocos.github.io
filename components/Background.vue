@@ -3,30 +3,37 @@
 </script>
 
 <template>
-<div class="borealis-container">
+<div class="borealis-placer">
   <slot />
-  <div class="borealis"></div>
+  <div class="borealis-container">
+    <div class="borealis"></div>
+  </div>
 </div>
 </template>
 
 <style scoped>
-.borealis-container {
-  @apply h-7xl relative;
+.borealis-placer {
+  @apply h-7xl;
 }
 
-.borealis {
-  @apply sticky;
-
+.borealis-container {
+  @apply z--20 absolute;
   left: 0;
   right: 0;
 
-  bottom: 0;
-  top: 0;
+  margin-top: -25%;
+  opacity: .8;
 
-  min-height: 100vh;
-  width: 100vw;
+  height: 100vh;
+}
 
-  background-image: url("~/assets/elements/Background_gradient.png");
-  object-fit: cover;
+.borealis {
+  @apply w-screen h-full;
+
+  filter: blur(50px);
+
+  background-image: url("~/assets/elements/Background-bolearis.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 </style>
