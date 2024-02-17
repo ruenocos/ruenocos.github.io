@@ -1,7 +1,7 @@
 # Portfolio
 2024 Refresh of my [portfolio](https://wesseloud.nl)
 
-![preview of the website](assets\images\portfolio-details-main-image.jpg)
+![preview of the website](assets/images/portfolio-details-main-image.jpg)
 
 ## Trello
 https://trello.com/b/2oRM8tXT/taken
