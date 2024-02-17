@@ -10,6 +10,9 @@ export default defineNuxtConfig({
       '@nuxthq/studio',
       '@unocss/nuxt'
   ],
+  css: [
+    '@/assets/css/global.css'
+  ],
   content: {
 
   }
