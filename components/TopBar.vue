@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const topbar = ref({
   navigation: [
-    { url: '/', name: 'Home' },
+    { url: '/projects', name: 'Projects' },
     { url: '/about', name: 'About' },
   ]
 });
