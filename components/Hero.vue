@@ -26,6 +26,7 @@
 <style scoped>
   .hero {
     @apply flex self-center flex-col justify-center font-preset-h1 max-w-screen;
+
     margin-top: calc(-100vh / 8 * 2);
     height: calc(100vh / 8 + 100vh);
 

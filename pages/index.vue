@@ -6,7 +6,7 @@ import Background from "~/components/Background.vue";
 <template>
   <Hero />
   <Background>
-    Yo enge content dit man
+    I enjoy the challenge of bringing the vision of others to life in dynamic graphics, and strive to create designs that are both visually stunning and effective.
   </Background>
 </template>
 
