@@ -4,7 +4,6 @@
 
 <template>
 <div class="borealis-placer">
-  <slot />
   <div class="borealis-container">
     <div class="borealis"></div>
   </div>
@@ -13,7 +12,6 @@
 
 <style scoped>
 .borealis-placer {
-  @apply h-7xl;
 }
 
 .borealis-container {

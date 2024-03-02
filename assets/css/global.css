@@ -12,4 +12,14 @@ body {
 :root {
     --color-primary: theme('colors.primary');
     --color-secondary: theme('colors.secondary');
+
+    --color-background: theme('colors.background');
+}
+
+h2 {
+    @apply text-xl font-500;
+}
+
+u {
+    @apply underline-primary;
 }

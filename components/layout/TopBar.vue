@@ -9,7 +9,7 @@ const topbar = ref({
 
 <template>
   <div class="topbar">
-    <img class="logo" src="~/assets/logo/logoWO.svg">
+    <img class="logo" src="../../assets/logo/logoWO.svg">
     <nav>
       <ul class="nav-list">
         <li v-for="item in topbar.navigation">
@@ -27,8 +27,9 @@ const topbar = ref({
 
 <style>
 .topbar {
-  @apply py-8 flex justify-between items-center z-1;
+  @apply py-8 flex justify-between items-center z-1 w-full;
   height: calc(100vh / 8);
+  width: calc(100% + 16rem);
 }
 
 .logo {

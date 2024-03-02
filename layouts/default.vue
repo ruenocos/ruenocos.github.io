@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import TopBar from "~/components/TopBar.vue";
-import Footer from "~/components/Footer.vue";
+import TopBar from "~/components/layout/TopBar.vue";
+import Footer from "~/components/layout/Footer.vue";
 </script>
 
 <template>
@@ -13,6 +13,6 @@ import Footer from "~/components/Footer.vue";
 
 <style>
 .layout {
-  @apply flex flex-col w-screen px-8 lg:px-0 lg:w-screen-lg;
+  @apply flex flex-col w-screen px-8 lg:px-0 lg:w-screen-lg items-center;
 }
 </style>

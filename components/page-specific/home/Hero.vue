@@ -9,7 +9,7 @@
       Creative
     </span>
       <Border class="video-container">
-        <video class="video" loop autoplay src="~/assets/videos/test-showcase.mp4" />
+        <video class="video" loop autoplay src="../../../assets/videos/test-showcase.mp4" />
       </Border>
     </div>
     <div class="line">
@@ -25,7 +25,7 @@
 
 <style scoped>
   .hero {
-    @apply flex self-center flex-col justify-center font-preset-h1 max-w-screen;
+    @apply flex self-center flex-col justify-center font-preset-h1 max-w-screen w-full;
 
     margin-top: calc(-100vh / 8 * 2);
     height: calc(100vh / 8 + 100vh);
