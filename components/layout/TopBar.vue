@@ -9,7 +9,9 @@ const topbar = ref({
 
 <template>
   <div class="topbar">
-    <img class="logo" src="../../assets/logo/logoWO.svg">
+    <NuxtLink to="/">
+      <img class="logo" src="../../assets/logo/logoWO.svg">
+    </NuxtLink>
     <nav>
       <ul class="nav-list">
         <li v-for="item in topbar.navigation">
@@ -27,7 +29,7 @@ const topbar = ref({
 
 <style>
 .topbar {
-  @apply py-8 flex justify-between items-center z-1 w-full;
+  @apply py-8 flex justify-between items-center z-1 lt-lg:w-full;
   height: calc(100vh / 8);
   width: calc(100% + 16rem);
 }

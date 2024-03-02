@@ -11,8 +11,6 @@
 </template>
 
 <style scoped>
-.borealis-placer {
-}
 
 .borealis-container {
   @apply z--20 absolute;
@@ -26,7 +24,7 @@
 }
 
 .borealis {
-  @apply w-screen h-full;
+  @apply w-screen h-full overflow-hidden;
 
   filter: blur(50px);
 

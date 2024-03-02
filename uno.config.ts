@@ -47,7 +47,8 @@ export default defineConfig({
             'secondary': '#8CF893',
             'tertiary': '#C5B8E6',
             'text': '#FFFFFF',
-            'background': '#221F26'
+            'background': '#221F26',
+            'background-secondary': '#2D2833'
         },
         breakpoints: {
             ...presetWind().theme.breakpoints,

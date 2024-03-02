@@ -14,12 +14,16 @@ body {
     --color-secondary: theme('colors.secondary');
 
     --color-background: theme('colors.background');
+    --color-background-secondary: theme('colors.background-secondary');
 }
 
-h2 {
-    @apply text-xl font-500;
-}
+h1 { @apply font-preset-h1; }
+h2 { @apply font-preset-h2; }
+h3 { @apply font-preset-h3; }
+
 
 u {
     @apply underline-primary;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
 }

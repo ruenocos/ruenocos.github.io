@@ -3,7 +3,10 @@
 </script>
 
 <template>
-ja toch
+  <Divider
+    first-line="Explore my favorite"
+    second-line="works"
+  />
 </template>
 
 <style scoped>

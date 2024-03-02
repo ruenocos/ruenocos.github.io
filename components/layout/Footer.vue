@@ -1,11 +1,111 @@
 <script setup lang="ts">
-
+  const footer = {
+    firstLine: 'Amazing ideas?',
+    secondLine: 'Lets talk about it.',
+    contact: [
+      { name: 'LinkedIn', handle: '@wesseloud', to: 'https://linkedin.com/paywal/goeie-website/wesseloud', icon: 'linkedin' },
+      { name: 'Email', handle: 'wonsie@wesseloud.nl', to: 'https://linkedin.com/paywal/goeie-website/wesseloud', icon: 'email' }
+    ]
+  }
 </script>
 
 <template>
-  <p>footer</p>
+  <div class="footer-container">
+    <div class="footer">
+      <div class="cta">
+        <h2>{{ footer.firstLine }}</h2>
+        <div class="second-line-container">
+          <div class="second-line" :data-text="footer.secondLine">
+            {{footer.secondLine}}
+          </div>
+          <div class="line" />
+        </div>
+      </div>
+      <div class="card-container">
+          <NuxtLink :to="contact.to" v-for="contact in footer.contact" class="contact-card">
+            <div class="contact-card-info">
+              <span class="name">{{ contact.name }}</span>
+              <span class="handle">{{ contact.handle }}</span>
+            </div>
+            <div class="contact-card-image" :style="{ backgroundImage: `url(icons/${contact.icon}.svg)` }" />
+          </NuxtLink>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
+.footer-container {
+  @apply w-screen bg-background-secondary relative flex justify-center;
+  &::before {
+    content: '';
+    background-image: url('/assets/elements/Footer-top.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    @apply absolute block h-12 w-full;
+    top: calc(-3rem);
+  }
+}
 
+.footer {
+  @apply lt-lg:w-full flex justify-between min-h-50vh items-center;
+  width: calc(1000px + 16rem);
+}
+
+.cta { @apply w-2/3 flex flex-col; }
+.cta * { @apply text-6xl font-700; }
+
+.second-line {
+  @apply flex relative text-background-secondary;
+  @apply text-7xl;
+
+  z-index: 0;
+  letter-spacing: 2px;
+}
+
+.second-line::after {
+  content: attr(data-text);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  font-size: 1em;
+
+  letter-spacing: 2px;
+  -webkit-text-stroke: 2px var(--color-primary);
+}
+
+.second-line-container { @apply flex flex-col; }
+
+.line {
+  @apply border-1px border-primary border-solid border-t-none border-l-none border-r-none;
+  @apply ml-12 w-full self-center;
+
+  &::before {
+    content: '';
+    @apply  absolute w-5px h-5px bg-primary;
+    margin-top: -2px;
+  }
+}
+
+.card-container {
+  @apply self-center flex flex-col;
+}
+
+.contact-card { @apply flex justify-between py-4; }
+.contact-card-info { @apply flex flex-col pr-4; }
+.contact-card-info {
+  .name { font-size: 1.7rem; }
+  .handle { font-size: .8rem; color: #a8a8a8; line-height: .9rem; }
+}
+
+.contact-card-image {
+  @apply h-auto min-w-12;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 </style>
