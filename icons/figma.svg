@@ -1,0 +1,17 @@
+<svg id="figma" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122.981" height="122.76" viewBox="0 0 122.981 122.76">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_203" data-name="Rectangle 203" width="122.981" height="122.76" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle_205" data-name="Rectangle 205" width="121.956" height="121.991" rx="32" transform="translate(0.769 0.769)" fill="#fff"/>
+  <g id="Mask_Group_17" data-name="Mask Group 17" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <g id="Figma-logo" transform="translate(33.623 19.579)">
+      <path id="path0_fill" d="M13.934,151.2a13.939,13.939,0,0,0,13.934-13.934V123.333H13.934a13.934,13.934,0,1,0,0,27.867Z" transform="translate(0 -67.599)" fill="#0acf83"/>
+      <path id="path1_fill" d="M0,75.6A13.939,13.939,0,0,1,13.934,61.667H27.867V89.534H13.934A13.939,13.939,0,0,1,0,75.6Z" transform="translate(0 -33.8)" fill="#a259ff"/>
+      <path id="path1_fill_1_" d="M0,13.934A13.939,13.939,0,0,1,13.934,0H27.867V27.867H13.934A13.939,13.939,0,0,1,0,13.934Z" fill="#f24e1e"/>
+      <path id="path2_fill" d="M61.667,0H75.6a13.934,13.934,0,1,1,0,27.867H61.667Z" transform="translate(-33.8)" fill="#ff7262"/>
+      <path id="path3_fill" d="M89.534,75.6A13.934,13.934,0,1,1,75.6,61.667,13.939,13.939,0,0,1,89.534,75.6Z" transform="translate(-33.8 -33.8)" fill="#1abcfe"/>
+    </g>
+  </g>
+</svg>
