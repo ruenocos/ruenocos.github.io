@@ -1,0 +1,1 @@
+.side-by-side{min-width:66.6666666667%;display:flex;flex-direction:column;justify-content:space-between}@media (min-width: 640px){.side-by-side{flex-direction:row}}@media (min-width: 640px){.side-by-side>*{max-width:50%}}
