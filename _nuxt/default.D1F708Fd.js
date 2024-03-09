@@ -1,0 +1,1 @@
+import{_ as t}from"./TopBar.vue.rRHHwxfG.js";import r from"./Footer.CbjDiHj6.js";import{s,o as a,i as m,l as o,z as n}from"./entry.BeEpTBN8.js";import"./nuxt-link.DMFnS8Qs.js";import"./Border.Ul8KEquM.js";const _={class:"layout"},h=s({__name:"default",setup(c){return(e,i)=>(a(),m("div",_,[o(t),n(e.$slots,"default"),o(r)]))}});export{h as default};

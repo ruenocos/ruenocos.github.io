@@ -1,1 +1,0 @@
-import{_ as s,o as t,i as n,z as o,j as r}from"./entry.CfZnYiKP.js";const a={},c={class:"hoverable"},_={class:"hoverable-on-hover"};function l(e,d){return t(),n("div",c,[o(e.$slots,"default"),r("div",_,[o(e.$slots,"on-hover")])])}const f=s(a,[["render",l]]);export{f as default};

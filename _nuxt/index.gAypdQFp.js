@@ -1,1 +1,0 @@
-import e from"./Divider.C6u2UA0m.js";import{_ as n,v as r,o as t}from"./entry.CfZnYiKP.js";const c={};function _(s,i){const o=e;return t(),r(o,{"first-line":"Explore my favorite","second-line":"works"})}const m=n(c,[["render",_]]);export{m as default};
