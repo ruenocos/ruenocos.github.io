@@ -1,9 +1,5 @@
-<script setup lang="ts">
-</script>
-
 <template>
-  <div>
-    <h1>detail</h1>
+  <div class="detail-page">
     <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
       <ContentRenderer :value="data" />
     </ContentQuery>
@@ -11,5 +7,5 @@
 </template>
 
 <style scoped>
-
+  .detail-page { @apply w-full; }
 </style>

@@ -17,18 +17,21 @@
         <div class="second-line-container">
           <div class="second-line" :data-text="footer.secondLine">
             {{footer.secondLine}}
+            <div class="line" />
           </div>
-          <div class="line" />
         </div>
       </div>
       <div class="card-container">
-          <NuxtLink :to="contact.to" v-for="contact in footer.contact" class="contact-card">
+        <div v-for="contact in footer.contact" class="contact-card-container">
+          <div class="contact-line" />
+          <NuxtLink :to="contact.to" class="contact-card">
             <div class="contact-card-info">
               <span class="name">{{ contact.name }}</span>
               <span class="handle">{{ contact.handle }}</span>
             </div>
-            <div class="contact-card-image" :style="{ backgroundImage: `url(icons/${contact.icon}.svg)` }" />
+            <div class="contact-card-image" :style="{ backgroundImage: `url(/icons/${contact.icon}.svg)` }" />
           </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
@@ -49,16 +52,16 @@
 }
 
 .footer {
-  @apply lt-lg:w-full flex justify-between min-h-50vh items-center;
+  @apply lt-lg:w-full flex flex-col sm:flex-row justify-between sm:min-h-50vh items-center;
   width: calc(1000px + 16rem);
 }
 
-.cta { @apply w-2/3 flex flex-col; }
-.cta * { @apply text-6xl font-700; }
+.cta { @apply sm:w-2/3 flex flex-col px-8 py-12 sm:p-0 self-start sm:self-center; }
+.cta * { @apply text-2xl sm:text-6xl font-700; }
 
 .second-line {
   @apply flex relative text-background-secondary;
-  @apply text-7xl;
+  @apply text-3xl sm:text-7xl pb-2;
 
   z-index: 0;
   letter-spacing: 2px;
@@ -78,24 +81,24 @@
   -webkit-text-stroke: 2px var(--color-primary);
 }
 
-.second-line-container { @apply flex flex-col; }
+.second-line-container { @apply flex pt-4; }
 
 .line {
-  @apply border-1px border-primary border-solid border-t-none border-l-none border-r-none;
-  @apply ml-12 w-full self-center;
+  @apply absolute border-1px border-primary border-solid border-t-none border-l-none border-r-none;
+  @apply top-full left-0 right-0;
 
   &::before {
     content: '';
-    @apply  absolute w-5px h-5px bg-primary;
+    @apply  absolute w-5px h-5px bg-primary top;
     margin-top: -2px;
   }
 }
 
 .card-container {
-  @apply self-center flex flex-col;
+  @apply flex flex-col px-8 w-full sm:w-unset sm:px-0 sm:min-w-1/4 sm:self-center;
 }
 
-.contact-card { @apply flex justify-between py-4; }
+.contact-card { @apply flex justify-between pt-2; }
 .contact-card-info { @apply flex flex-col pr-4; }
 .contact-card-info {
   .name { font-size: 1.7rem; }
@@ -107,5 +110,23 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.contact-card-container { @apply py-4; }
+
+.contact-line {
+  @apply w-full relative border-1px border-primary border-solid border-t-none border-l-none border-r-none;
+
+  &::before {
+    content: '';
+    @apply  absolute w-5px h-5px bg-primary left-0;
+    margin-top: -2px;
+  }
+
+  &::after {
+    content: '';
+    @apply  absolute w-5px h-5px bg-primary right-0;
+    margin-top: -2px;
+  }
 }
 </style>

@@ -5,17 +5,19 @@
 <template>
   <div class="hero">
     <div class="line">
-    <span>
-      Creative
-    </span>
+      <span>
+        Creative
+      </span>
       <Border class="video-container">
         <video class="video" loop autoplay src="../../../assets/videos/test-showcase.mp4" />
       </Border>
+      <div class="mobile-sugar" />
     </div>
     <div class="line">
       <Border class="scroller">
         Website
       </Border>
+      <div class="mobile-sugar" />
       <span>
       Designer
     </span>
@@ -24,6 +26,8 @@
 </template>
 
 <style scoped>
+  .mobile-sugar { @apply bg-red py-4 w-full; }
+
   .hero {
     @apply flex self-center flex-col justify-center font-preset-h1 max-w-screen w-full;
 
@@ -39,7 +43,7 @@
       font-size: 100%;
 
       .video-container {
-        @apply max-w-full flex-grow;
+        @apply max-w-full flex-grow hidden sm:flex;
         --border-color: var(--color-primary);
 
         .video {
@@ -51,7 +55,7 @@
 
       .scroller {
         --border-color: var(--color-primary);
-        @apply font-sans h-32 flex items-center py-4 px-6;
+        @apply font-sans h-32 items-center py-4 px-6 hidden sm:flex;
         font-weight: normal;
         font-size: 4.4rem;
       }

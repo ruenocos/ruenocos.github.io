@@ -24,18 +24,26 @@ const topbar = ref({
         </Border>
       </ul>
     </nav>
+    <div class="mobile-nav" />
   </div>
 </template>
 
 <style>
 .topbar {
-  @apply py-8 flex justify-between items-center z-1 lt-lg:w-full;
+  @apply py-8 flex justify-between items-center z-1 lt-lg:w-full sticky sm:relative top-0;
   height: calc(100vh / 8);
   width: calc(100% + 16rem);
 }
 
 .logo {
   @apply h-12;
+}
+
+nav { @apply hidden sm:block }
+.mobile-nav {
+  @apply block sm:hidden w-12 h-12;
+  background-image: url("icons/menu.svg");
+  background-size: cover;
 }
 
 .nav-list {

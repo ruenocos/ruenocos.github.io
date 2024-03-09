@@ -22,16 +22,17 @@ const { title, imageUrl, to } = props;
 
 <style scoped>
 .large-project-card {
-  @apply w-full h-80vh flex justify-center my-10vh;
+  @apply w-full sm:h-80vh flex flex-col-reverse sm:flex-row justify-center sm:my-10vh lt-sm:mb-16;
 }
-.large-project-card > * { @apply w-1/2; }
+.large-project-card > * { @apply sm:w-1/2; }
 
 .card-info {
   @apply flex flex-col self-center pr-16;
-  span { @apply font-preset-subtitle text-secondary pb-3; }
+  span { @apply font-preset-subtitle lt-sm:font-preset-mobile-subtitle text-secondary pb-3; }
 }
+
 .card-image-container {
-  @apply flex justify-end;
+  @apply flex justify-end sm:h-full lt-sm:w-80vw lt-sm:h-80vw lt-sm:pb-8 self-center;
 }
 
 .card-image {

@@ -1,7 +1,7 @@
 @import "@unocss/reset/tailwind.css";
 
 body {
-    @apply font-sans bg-background text-text font-body min-h-screen;
+    @apply font-sans bg-background text-text font-preset-body lt-sm:font-preset-mobile-body min-h-screen;
     @apply flex justify-center;
 }
 
@@ -17,9 +17,9 @@ body {
     --color-background-secondary: theme('colors.background-secondary');
 }
 
-h1 { @apply font-preset-h1; }
-h2 { @apply font-preset-h2; }
-h3 { @apply font-preset-h3; }
+h1 { @apply font-preset-h1 lt-sm:font-preset-mobile-h1; }
+h2 { @apply font-preset-h2 lt-sm:font-preset-mobile-h2; }
+h3 { @apply font-preset-h3 lt-sm:font-preset-mobile-h3; }
 
 
 u {
