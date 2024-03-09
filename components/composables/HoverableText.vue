@@ -8,4 +8,6 @@
 </template>
 
 <style scoped>
+.hoverable-on-hover { @apply hidden }
+.hoverable:hover > .hoverable-on-hover { @apply block; }
 </style>

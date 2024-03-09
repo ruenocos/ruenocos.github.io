@@ -20,6 +20,7 @@ const desktopFonts = {
     'h2': mkFont('Space Grotesk', 3, 3.4, 600),
     'h3': mkFont('Space Grotesk', 2.5, 3, 600),
     'subtitle': mkFont('Jost', 1.2, 1.4, 'normal'),
+    'subtitle-2': mkFont('Jost', 1.2, 2, 'normal'),
     'button': mkFont('Jost', 1, 1.4, 600)
 }
 
@@ -31,15 +32,16 @@ const mobileFonts = {
     'h2': mkFont('Space Grotesk', 1.8, 2.1, 600),
     'h3': mkFont('Space Grotesk', 1.6, 1.9, 600),
     'subtitle': mkFont('Jost', .88, 1.33, 'normal'),
+    'subtitle-2': mkFont('Jost', .88, 1.4, 'normal'),
     'button': mkFont('Jost', 1, 1.22, 600)
 }
 
 export default defineConfig({
     rules: [
-        [/^font-preset-(\w+)/, ([, name]) =>
+        [/^font-preset-([\w-]+)/, ([, name]) =>
             desktopFonts[name]
         ],
-        [/^font-preset-mobile-(\w+)/, ([, name]) =>
+        [/^font-preset-mobile-([\w-]+)/, ([, name]) =>
             mobileFonts[name]
         ]
     ],

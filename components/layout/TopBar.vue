@@ -10,7 +10,8 @@ const topbar = ref({
 <template>
   <div class="topbar">
     <NuxtLink to="/">
-      <img class="logo" src="../../assets/logo/logoWO.svg">
+      <img class="logo" alt="Wessel Oud" src="../../assets/logo/logoWO.svg" />
+      <img class="logo-mobile" alt="Wessel Oud" src="../../assets/logo/logoWO-mobile.svg" />
     </NuxtLink>
     <nav>
       <ul class="nav-list">
@@ -35,14 +36,17 @@ const topbar = ref({
   width: calc(100% + 16rem);
 }
 
-.logo {
+.logo, .logo-mobile {
   @apply h-12;
 }
+
+.logo { @apply lt-sm:hidden; }
+.logo-mobile { @apply sm:hidden; }
 
 nav { @apply hidden sm:block }
 .mobile-nav {
   @apply block sm:hidden w-12 h-12;
-  background-image: url("icons/menu.svg");
+  background-image: url("/icons/menu.svg");
   background-size: cover;
 }
 

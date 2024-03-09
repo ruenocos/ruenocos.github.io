@@ -4,9 +4,9 @@
   <SideBySide>
     <div class="intro">
       <HoverableText>
-        <h3 class="hello">Hello, I'm <u>Wons</u></h3>
-        <template slot="on-hover">
-          Enge foto
+        <h3 class="hello">Hello, I'm <u>Wessel</u></h3>
+        <template v-slot:on-hover>
+          Hier komt een foto
         </template>
       </HoverableText>
     </div>
@@ -23,6 +23,10 @@
     @apply w-full pb-8 sm:pb-48;
 
     * { @apply flex-col; }
+  }
+
+  .description {
+    @apply font-preset-subtitle-2 lt-sm:font-preset-mobile-subtitle-2;
   }
 </style>
 <script setup lang="ts">
