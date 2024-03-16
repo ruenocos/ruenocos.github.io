@@ -1,0 +1,1 @@
+.masonry{column-count:1;-moz-column-gap:6rem;column-gap:6rem;row-gap:2rem}@media (min-width: 768px){.masonry{column-count:2}}.masonry>*{display:inline-block;width:100%;-moz-column-break-inside:avoid;break-inside:avoid-column}
