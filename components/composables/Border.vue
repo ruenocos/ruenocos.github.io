@@ -13,7 +13,7 @@
 <style scoped>
 .bordered {
   @apply border-2px relative;
-  --square-size: 2;
+  --square-size: 2.5;
   border-color: var(--border-color);
 
   .points {

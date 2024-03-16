@@ -51,7 +51,7 @@ const { slug, firstLine, secondLine } = props;
 .second-line-container { @apply flex pt-2; }
 
 .line {
-  @apply border-1px border-primary border-solid border-t-none border-l-none border-r-none;
+  @apply border-2px border-primary border-solid border-t-none border-l-none border-r-none;
   @apply ml-12 w-full self-center;
 
   animation: slide-out;
@@ -61,7 +61,7 @@ const { slug, firstLine, secondLine } = props;
 
   &::before {
     content: '';
-    @apply  absolute w-5px h-5px bg-primary;
+    @apply  absolute w-7px h-7px bg-primary;
     margin-top: -2px;
   }
 }

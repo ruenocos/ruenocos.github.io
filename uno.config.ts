@@ -76,6 +76,7 @@ export default defineConfig({
         breakpoints: {
             ...presetWind().theme.breakpoints,
             'lg': '1200px',
+            'xl': '1440px',
             'text-normal': '600px'
         }
     }

@@ -43,8 +43,8 @@
   --border-color: var(--color-primary);
 }
 
-.card-image { @apply w-full min-h-60vh bg-cover;}
-.card-description { @apply pt-8 min-h-10vh; }
+.card-image { @apply w-full min-h-38rem bg-cover;}
+.card-description { @apply pt-8 h-8rem;}
 .card-category { @apply text-secondary font-preset-subtitle font-preset-mobile-subtitle; }
 .card-title { @apply font-preset-h2 font-preset-mobile-h2; }
 </style>

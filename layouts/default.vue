@@ -13,7 +13,7 @@ import Footer from "~/components/layout/Footer.vue";
 
 <style>
 .layout {
-  @apply flex relative flex-col w-screen px-8 lg:px-0 lg:w-1000px items-center;
+  @apply flex relative flex-col w-screen px-8 sm:max-w-640px md:max-w-768px lg:max-w-1024px xl:max-w-1280px items-center;
 }
 
 body { @apply overflow-x-hidden; }
