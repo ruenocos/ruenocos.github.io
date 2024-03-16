@@ -1,7 +1,7 @@
 ---
-slug: test-1
+slug: test-2
 category: Website design
-primaryImage: content/images-content/portfolio-item-1.jpg
+primaryImage: content/images-content/portfolio-item-2.jpg
 ---
 # Rabies maior pro Abantiades in ille nil
 

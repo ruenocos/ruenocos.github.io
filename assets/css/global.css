@@ -21,6 +21,11 @@ h1 { @apply font-preset-h1 lt-sm:font-preset-mobile-h1; }
 h2 { @apply font-preset-h2 lt-sm:font-preset-mobile-h2; }
 h3 { @apply font-preset-h3 lt-sm:font-preset-mobile-h3; }
 
+*[data-content-id] {
+    h1, h2, h3, h4, h5 {
+        @apply py-8;
+    }
+}
 
 u {
     @apply underline-primary;

@@ -15,7 +15,7 @@
     </div>
   </SideBySide>
   <Divider firstLine="Featured" secondLine="Projects" />
-  <LargeProjectCard v-for="project in projects" :title="project.title" :image-url="project.image" :to="project.to" />
+  <LargeProjectCard v-for="project in projects" :title="project.title" :image-url="project.primaryImage" :to="project._path" />
 </template>
 
 <style scoped>
@@ -33,9 +33,15 @@
 import LargeProjectCard from "~/components/page-specific/home/LargeProjectCard.vue";
 
 const mkProject = (title: string, to: string, image: string) => ({title, to, image})
-const projects = [
-  mkProject('Introducing the leading yacht service', '/projects/test', 'content/images-content/portfolio-item-1.jpg'),
-  mkProject('The leading yacht service', '/projects', 'content/images-content/portfolio-item-2.jpg'),
-  mkProject('The leading yacht service', '/projects', 'content/images-content/portfolio-item-3.jpg')
-]
+
+const {data: projects} = await useAsyncData('projects', async () =>
+{
+  return await queryContent('/projects')
+      .sort({
+        slug: 1
+      })
+      .limit(3)
+      .find();
+});
+
 </script>

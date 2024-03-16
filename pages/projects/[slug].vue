@@ -7,5 +7,5 @@
 </template>
 
 <style scoped>
-  .detail-page { @apply w-full; }
+  .detail-page { @apply w-full pb-20; }
 </style>
