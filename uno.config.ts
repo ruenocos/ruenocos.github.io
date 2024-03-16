@@ -43,7 +43,13 @@ export default defineConfig({
         ],
         [/^font-preset-mobile-([\w-]+)/, ([, name]) =>
             mobileFonts[name]
-        ]
+        ],
+        [/^column-count-(\d+)/, ([, count]) =>
+        {
+            return {
+                'column-count': count
+            }
+        }]
     ],
     transformers: [
         transformDirectives()
@@ -56,7 +62,7 @@ export default defineConfig({
                 heading: 'Space Grotesk',
                 sans: 'Jost'
             }
-        }),
+        })
     ],
     theme: {
         colors: {

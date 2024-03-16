@@ -4,7 +4,7 @@
     secondLine: 'Lets talk about it.',
     contact: [
       { name: 'LinkedIn', handle: '@wesseloud', to: 'https://linkedin.com/paywal/goeie-website/wesseloud', icon: 'linkedin' },
-      { name: 'Email', handle: 'wonsie@wesseloud.nl', to: 'https://linkedin.com/paywal/goeie-website/wesseloud', icon: 'email' }
+      { name: 'Email', handle: 'wonsie@wesseloud.nl', to: 'mailto:wonsie@wesseloud.nl', icon: 'email' }
     ]
   }
 </script>

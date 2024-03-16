@@ -20,9 +20,11 @@ const topbar = ref({
             {{ item.name }}
           </NuxtLink>
         </li>
-        <Border class="contact-button">
+        <NuxtLink to="/contact">
+          <Border class="contact-button">
             Get in touch
-        </Border>
+          </Border>
+        </NuxtLink>
       </ul>
     </nav>
     <div class="mobile-nav" />
