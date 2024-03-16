@@ -25,6 +25,10 @@ h3 { @apply font-preset-h3 lt-sm:font-preset-mobile-h3; }
     h1, h2, h3, h4, h5 {
         @apply py-8;
     }
+
+    p {
+        @apply pb-2;
+    }
 }
 
 u {

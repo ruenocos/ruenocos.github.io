@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       '~/components/composables',
 
       '~/components/page-specific/home',
+      '~/components/page-specific/detail',
     ]
   },
   devServer: {
