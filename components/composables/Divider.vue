@@ -13,9 +13,7 @@ const { slug, firstLine, secondLine } = props;
     <span class="slug" v-if="slug">{{ slug }}</span>
     <h2>{{ firstLine }}</h2>
     <div class="second-line-container">
-      <div class="second-line" :data-text="secondLine">
-        {{secondLine}}
-      </div>
+      <StrokedText :text="secondLine" />
       <div class="line" />
     </div>
   </div>
@@ -26,27 +24,6 @@ const { slug, firstLine, secondLine } = props;
 
 .cta { @apply flex flex-col w-full py-16 sm:py-32; }
 .cta * { @apply text-4xl sm:text-7xl font-700; }
-
-.second-line {
-  @apply flex relative text-background;
-
-  letter-spacing: 2px;
-}
-
-.second-line::after {
-  content: attr(data-text);
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: -1;
-  font-size: 1em;
-
-  letter-spacing: 2px;
-
-  -webkit-text-stroke: 2px var(--color-primary);
-}
 
 .second-line-container { @apply flex pt-2; }
 
