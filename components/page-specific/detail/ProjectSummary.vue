@@ -4,7 +4,8 @@ const data = defineProps<{
     label: string,
     image: string | undefined
   }
-  roles: string[]
+  roles: string[],
+  url: string
 }>();
 
 console.log(data);
@@ -39,9 +40,11 @@ console.log(data);
       </span>
       <slot />
     </div>
-    <div>
-      Button
-    </div>
+    <NuxtLink target="_blank" :to="data.url">
+      <Border class="view-button">
+        View website
+      </Border>
+    </NuxtLink>
   </div>
 </div>
 </template>
@@ -77,5 +80,10 @@ console.log(data);
 
 .label {
   @apply font-preset-subtitle text-tertiary pb-6;
+}
+
+.view-button {
+  --border-color: var(--color-primary);
+  @apply inline-block p-3 mt-4 font-preset-button font-preset-mobile-button;
 }
 </style>
