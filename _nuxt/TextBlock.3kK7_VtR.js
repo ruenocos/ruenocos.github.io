@@ -1,0 +1,1 @@
+import{s as o,o as s,i as a,j as t,k as l,B as n,_ as r}from"./entry.Bil3Jpzx.js";const c={class:"text-block"},_=o({__name:"TextBlock",props:{title:{}},setup(i){return(e,p)=>(s(),a("div",c,[t("h3",null,l(e.title),1),t("div",null,[n(e.$slots,"default",{},void 0,!0)])]))}}),u=r(_,[["__scopeId","data-v-05480a92"]]);export{u as default};

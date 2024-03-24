@@ -1,0 +1,1 @@
+import t from"./Divider.C2AcAH9K.js";import{_ as c,q as n,o as e}from"./entry.Bil3Jpzx.js";import"./StrokedText.BWEDWJ6z.js";const _={};function r(a,s){const o=t;return e(),n(o,{slug:"Contact","first-line":"Con","second-line":"tact"})}const f=c(_,[["render",r],["__scopeId","data-v-74dba710"]]);export{f as default};
