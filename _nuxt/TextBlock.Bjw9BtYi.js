@@ -1,1 +1,0 @@
-import{s as o,o as s,i as a,j as t,k as l,B as c,_ as n}from"./entry.Koe897Dj.js";const r={class:"text-block"},d=o({__name:"TextBlock",props:{title:{}},setup(_){return(e,i)=>(s(),a("div",r,[t("h3",null,l(e.title),1),t("div",null,[c(e.$slots,"default",{},void 0,!0)])]))}}),u=n(d,[["__scopeId","data-v-c725d8cd"]]);export{u as default};
