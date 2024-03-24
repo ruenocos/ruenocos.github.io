@@ -36,6 +36,7 @@ I'm going for a dark theme this time and incorporating more animations. The reas
 
 ::ImageGrid
 ---
+offset: true
 left:
   - image: '/content/images/test-project/Colorpallete.jpg'
   - text: 'I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision.'
