@@ -38,7 +38,7 @@ I'm going for a dark theme this time and incorporating more animations. The reas
 ---
 offset: true
 left:
-  - image: '/content/images/test-project/Colorpallete.jpg'
+  - image: '/content/images/test-project/colorpallete.jpg'
   - text: 'I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision.'
   - image: '/content/images/test-project/website_concept.jpg'
 right:
