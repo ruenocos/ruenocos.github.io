@@ -32,25 +32,19 @@ secondLine: 'Phase'
 title: 'Bringing the concept to life'
 ---
 I'm going for a dark theme this time and incorporating more animations. The reason behind this transformation is my growing interest in motion design, and I wanted my portfolio to reflect that.
-
-Text Block item:
-  :::ImageGridItem
-  ---
-  text: 'nog een blok'
-  ---
-  :::
 ::
 
 ::ImageGrid
 ---
 offset: true
-left:
-  - image: '/content/images/test-project/colorpallete.jpg'
-  - text: 'I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision.'
-  - image: '/content/images/test-project/website_concept.jpg'
-right:
-  - image: '/content/images/test-project/text_example.jpg'
-  - text: 'After that, I began working on my concept, which involved utilizing elements from programs such as Adobe XD, Adobe Photoshop, and Figma.'
-  - image: '/content/images/test-project/image_concept_rounded.jpg'
 ---
+#left
+:ImageGridItem{type="image" image="/content/images/test-project/colorpallete.jpg"}
+:ImageGridItem{type="text" text="I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision."}
+:ImageGridItem{type="image" image="/content/images/test-project/website_concept.jpg"}
+
+#right
+:ImageGridItem{type="image" image="/content/images/test-project/text_example.jpg"}
+:ImageGridItem{type="text" text="After that, I began working on my concept, which involved utilizing elements from programs such as Adobe XD, Adobe Photoshop, and Figma."}
+:ImageGridItem{type="image" image="/content/images/test-project/image_concept_rounded.jpg"}
 ::

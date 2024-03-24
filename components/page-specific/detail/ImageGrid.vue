@@ -1,26 +1,10 @@
-<script setup lang="ts">
-import ImageGridItem from "~/components/page-specific/detail/ImageGridItem.vue";
-
-interface GridItem {
-  type: 'image' | 'grid'
-  text?: string
-  image?: string
-}
-
-const data = defineProps<{
-  offset: boolean
-  left: GridItem[]
-  right: GridItem[]
-}>()
-</script>
-
 <template>
   <div class="image-grid">
     <div>
-      <ImageGridItem :text="item.text" :image="item.image" v-for="item in data.left" />
+      <slot name="left" />
     </div>
     <div :class="data.offset ? 'offset' : ''">
-      <ImageGridItem :text="item.text" :image="item.image" v-for="item in data.right" />
+      <slot name="right" />
     </div>
   </div>
 </template>
