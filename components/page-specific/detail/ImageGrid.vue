@@ -8,6 +8,7 @@ interface GridItem {
 }
 
 const data = defineProps<{
+  offset: boolean
   left: GridItem[]
   right: GridItem[]
 }>()
@@ -18,7 +19,7 @@ const data = defineProps<{
     <div>
       <ImageGridItem :text="item.text" :image="item.image" v-for="item in data.left" />
     </div>
-    <div>
+    <div :class="data.offset ? 'offset' : ''">
       <ImageGridItem :text="item.text" :image="item.image" v-for="item in data.right" />
     </div>
   </div>
@@ -37,7 +38,12 @@ const data = defineProps<{
   }
 
   > div:last-child {
-    @apply sm:pl-3 sm:pt-24;
+    @apply sm:pl-3;
   }
+
+  > div.offset {
+    @apply sm:pt-24;
+  }
+
 }
 </style>
