@@ -1,1 +1,0 @@
-import{_ as o,o as c,i as a,p as t,n as _,j as s}from"./entry.qwsVbE6U.js";const n={},r=e=>(t("data-v-bb960723"),e=e(),_(),e),d={class:"borealis-placer"},i=r(()=>s("div",{class:"borealis-container"},[s("div",{class:"borealis"})],-1)),p=[i];function l(e,b){return c(),a("div",d,p)}const h=o(n,[["render",l],["__scopeId","data-v-bb960723"]]);export{h as default};
