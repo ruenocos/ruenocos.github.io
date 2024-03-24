@@ -41,10 +41,10 @@ offset: true
 #left
 :ImageGridItem{type="image" image="/content/images/test-project/colorpallete.jpg"}
 :ImageGridItem{type="text" text="I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision."}
-:ImageGridItem{type="image" image="/content/images/test-project/website_concept.jpg"}
+:ImageGridItem{type="image" image="/content/images/test-project/websites_concept.jpg"}
 
 #right
 :ImageGridItem{type="image" image="/content/images/test-project/text_example.jpg"}
 :ImageGridItem{type="text" text="After that, I began working on my concept, which involved utilizing elements from programs such as Adobe XD, Adobe Photoshop, and Figma."}
-:ImageGridItem{type="image" image="/content/images/test-project/image_concept_rounded.jpg"}
+:ImageGridItem{type="image" image="/content/images/test-project/images_concept_rounded.jpg"}
 ::
