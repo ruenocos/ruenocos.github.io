@@ -1,0 +1,1 @@
+import{_ as s,o as t,i as n,B as o,j as r}from"./entry.BLgPbsZl.js";const a={},c={class:"hoverable"},_={class:"hoverable-on-hover"};function d(e,l){return t(),n("div",c,[o(e.$slots,"default",{},void 0,!0),r("div",_,[o(e.$slots,"on-hover",{},void 0,!0)])])}const i=s(a,[["render",d],["__scopeId","data-v-cf5037cb"]]);export{i as default};
