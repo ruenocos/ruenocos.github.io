@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const data = defineProps<{
+  offset: boolean
+}>()
+</script>
+
 <template>
   <div class="image-grid">
     <div>
