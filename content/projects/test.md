@@ -2,7 +2,7 @@
 slug: test-1
 category: Website design
 title: Test Artikel
-primaryImage: /content/images/portfolio-item-1.jpg
+primaryImage: /content/images/test-project/portfolio-details-main-image.jpg
 ---
 
 ::ProjectSummary
