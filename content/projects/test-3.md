@@ -2,6 +2,7 @@
 slug: test-3
 category: Website design
 primaryImage: /content/images/portfolio-item-3.jpg
+portraitImage: /content/images/portfolio-item-2.jpg
 ---
 # Project 3
 

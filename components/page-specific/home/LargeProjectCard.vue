@@ -15,29 +15,34 @@ const { title, imageUrl, to } = props;
         <h3>{{ title }}</h3>
       </NuxtLink>
     <NuxtLink :to="to" class="card-image-container">
-      <Border class="card-image" :style="{backgroundImage: `url(${imageUrl})`}" />
+      <Border class="card-image">
+        <img :src="imageUrl" />
+      </Border>
     </NuxtLink>
   </div>
 </template>
 
 <style scoped>
 .large-project-card {
-  @apply w-full sm:h-80vh flex flex-col-reverse sm:flex-row justify-center sm:my-10vh lt-sm:mb-16;
+  @apply w-full sm:h-80vh flex flex-col-reverse sm:flex-row sm:justify-center sm:my-10vh lt-sm:mb-16;
 }
 .large-project-card > * { @apply sm:w-1/2; }
 
 .card-info {
-  @apply flex flex-col self-center pr-16;
+  @apply flex flex-col sm:self-center pr-16;
   span { @apply font-preset-subtitle lt-sm:font-preset-mobile-subtitle text-secondary pb-3; }
 }
 
 .card-image-container {
-  @apply flex justify-end sm:h-full lt-sm:w-80vw lt-sm:h-80vw lt-sm:pb-8 self-center;
+  @apply flex justify-end lt-sm:w-full lt-sm:pb-8 self-center;
 }
 
 .card-image {
   --border-color: var(--color-primary);
-  background-size: cover;
-  @apply h-full md:w-6/7 w-full;
+  @apply h-full md:w-6/7 w-full bg-cover bg-center;
+
+  img {
+    @apply w-full h-auto lt-sm:max-h-80vw object-cover;
+  }
 }
 </style>

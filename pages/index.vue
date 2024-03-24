@@ -15,7 +15,7 @@
     </div>
   </SideBySide>
   <Divider firstLine="Featured" secondLine="Projects" />
-  <LargeProjectCard v-for="project in projects" :title="project.title" :image-url="project.primaryImage" :to="project._path" />
+  <LargeProjectCard v-for="project in projects" :title="project.title" :image-url="project.portraitImage" :to="project._path" />
 </template>
 
 <style scoped>
@@ -30,10 +30,6 @@
   }
 </style>
 <script setup lang="ts">
-import LargeProjectCard from "~/components/page-specific/home/LargeProjectCard.vue";
-
-const mkProject = (title: string, to: string, image: string) => ({title, to, image})
-
 const {data: projects} = await useAsyncData('projects', async () =>
 {
   return await queryContent('/projects')

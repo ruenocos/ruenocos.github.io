@@ -3,6 +3,7 @@ slug: test-21
 category: Website design
 title: Nieuw Artikel
 primaryImage: /content/images/portfolio-item-1.jpg
+portraitImage: /content/images/portfolio-item-2.jpg
 ---
 
 ::ProjectSummary

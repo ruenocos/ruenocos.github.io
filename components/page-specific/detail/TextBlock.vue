@@ -17,14 +17,14 @@
 
 <style scoped>
 .text-block {
-  @apply flex justify-between pb-32;
+  @apply flex sm:justify-between pb-32 flex-col sm:flex-row;
 
   div {
-    @apply py-8 w-1/2;
+    @apply sm:py-8 sm:w-1/2;
   }
 
   h3 {
-    @apply w-1/2 mr-12;
+    @apply sm:w-1/2 sm:mr-12 py-4;
   }
 }
 </style>
