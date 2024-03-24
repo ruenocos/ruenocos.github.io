@@ -35,7 +35,7 @@ offset: true
 #left
   :::image-grid-item
   ---
-  image: /content/images/test-project/colorpallete.jpg
+  image: /content/images/test-project/colorpalletes.jpg
   type: image
   ---
   :::
