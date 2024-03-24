@@ -1,1 +1,0 @@
-import{_ as s,o,i as t,B as n}from"./entry.CUUkjIid.js";const c={},_={class:"side-by-side"};function r(e,a){return o(),t("div",_,[n(e.$slots,"default")])}const i=s(c,[["render",r]]);export{i as default};
