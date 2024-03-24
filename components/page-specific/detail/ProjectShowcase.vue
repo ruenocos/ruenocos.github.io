@@ -7,7 +7,9 @@
 <template>
 <div class="project-showcase">
   <Background />
-  <div class="project-showcase-image" :style="{ backgroundImage: `url(${data.imageUrl})` }" />
+  <Border>
+    <img class="project-showcase-image" :src="data.imageUrl" />
+  </Border>
 </div>
 </template>
 
@@ -18,5 +20,13 @@
 
   .project-showcase-image {
     @apply w-full h-66vh bg-cover bg-center;
+  }
+
+  .bordered {
+    --border-color: var(--color-primary);
+
+    img {
+      @apply w-full h-auto;
+    }
   }
 </style>

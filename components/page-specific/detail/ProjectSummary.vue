@@ -17,9 +17,7 @@ console.log(data);
     <span class="label">
       Client
     </span>
-    <div class="client-image" v-if="data.client.image" :style="{ backgroundImage: `url(${data.client.image})` }">
-
-    </div>
+    <img class="client-image" v-if="data.client.image" :src="data.client.image" />
     <span v-else>
       {{ data.client.label }}
     </span>
@@ -59,7 +57,7 @@ console.log(data);
 }
 
 .client-image {
-  @apply bg-center bg-cover min-h-10 w-30;
+  @apply min-h-10 w-30;
 }
 
 .role {
