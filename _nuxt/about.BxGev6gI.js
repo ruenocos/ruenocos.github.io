@@ -1,1 +1,0 @@
-import n from"./Divider.BuLV7xy2.js";import{_ as t,q as e,o as c}from"./entry.D6Rf6Pus.js";import"./StrokedText.eAiD9I3o.js";const r={};function _(i,s){const o=n;return c(),e(o,{slug:"About","first-line":"Bringing your vision to","second-line":"life"})}const m=t(r,[["render",_],["__scopeId","data-v-cba76286"]]);export{m as default};
