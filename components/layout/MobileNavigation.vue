@@ -16,7 +16,6 @@ const onClick = () =>
   console.log(checkbox);
   checkbox.value.checked = false;
 }
-
 </script>
 
 <template>
@@ -32,28 +31,39 @@ const onClick = () =>
       </NuxtLink>
     </nav>
   </div>
-  <img class="mobile-logo" alt="Wessel Oud" src="../../assets/logo/logoWO-mobile.svg" />
+  <NuxtLink to="/">
+    <img class="mobile-logo" alt="Wessel Oud" src="../../assets/logo/logoWO-mobile.svg" />
+  </NuxtLink>
 </template>
 
-<style scoped>
+<style>
   .mobile-logo {
     @apply absolute left-8 top-5 h-12 sm:hidden;
   }
 
   .mobile-nav-container {
     @apply fixed right-0 w-0 overflow-x-hidden top-0 h-screen z-1 flex justify-end;
-    transition: width .2s ease-out;
     position: fixed;
-    background: #a8a8a888;
+    background: rgba(61, 59, 64, 0.8);
+
+    nav {
+      @apply w-0;
+    }
   }
+
   #mobile-nav-toggle:checked ~ .mobile-nav-container {
     @apply w-screen;
+
+    nav {
+      @apply w-full sm:w-2/3 md:w-1/3;
+    }
   }
    .mobile-nav-container {
     @apply self-end;
 
     nav {
-      @apply bg-background flex flex-col justify-center h-full w-full overflow-x-hidden sm:w-1/3 px-24;
+      @apply bg-background flex flex-col justify-center h-full overflow-x-hidden px-24;
+      transition: width .2s ease-out;
 
       .label {
         @apply font-preset-subtitle text-tertiary;
@@ -66,13 +76,22 @@ const onClick = () =>
   }
 
   .mobile-nav-button-container {
-    @apply sticky self-end right-8 top-5 z-2 flex flex-col justify-center;
+    @apply sticky self-end right-8 top-5 z-2 flex flex-col justify-center fixed sm:right-16 sm:opacity-0;
+    transition: opacity .1s ease-out;
   }
 
   .mobile-nav-button {
-    @apply sm:hidden w-12 h-12;
+    @apply w-12 h-12 cursor-pointer;
     background-image: url("/icons/menu.svg");
     background-size: cover;
+  }
+
+  .router-link-exact-active > .stroked {
+    @apply text-primary;
+  }
+
+  .router-link-exact-active > .stroked::after {
+    @apply hidden;
   }
 
 </style>

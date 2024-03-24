@@ -52,7 +52,7 @@
 }
 
 .footer {
-  @apply lt-lg:w-full flex flex-col sm:flex-row justify-between sm:min-h-50vh items-center;
+  @apply lt-lg:w-full flex flex-col sm:flex-row justify-between sm:min-h-50vh items-center sm:px-12;
   width: calc(1000px + 16rem);
 }
 

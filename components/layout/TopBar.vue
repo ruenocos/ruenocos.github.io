@@ -1,14 +1,34 @@
 <script lang="ts" setup>
+import {breakpointsTailwind} from "@vueuse/core";
+
 const topbar = ref({
   navigation: [
     { url: '/projects', name: 'Projects' },
     { url: '/about', name: 'About' },
   ]
 });
+
+const breakpoints = useBreakpoints(breakpointsTailwind);
+
+const container = ref(null);
+const isContainerVisible = useElementVisibility(container);
+watch(isContainerVisible, () =>
+{
+  if (! breakpoints.greaterOrEqual('sm'))
+  {
+    return;
+  }
+
+  const el = document.querySelector('.mobile-nav-button-container');
+  if (el !== null)
+  {
+    el.style.opacity = isContainerVisible.value ? 0 : 1;
+  }
+});
 </script>
 
 <template>
-  <div class="topbar">
+  <div class="topbar" ref="container">
     <NuxtLink to="/">
       <img class="logo" alt="Wessel Oud" src="../../assets/logo/logoWO.svg" />
     </NuxtLink>

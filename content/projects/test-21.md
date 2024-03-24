@@ -1,7 +1,7 @@
 ---
-slug: test-1
+slug: test-21
 category: Website design
-title: Test Artikel
+title: Nieuw Artikel
 primaryImage: /content/images-content/portfolio-item-1.jpg
 ---
 
@@ -17,18 +17,4 @@ roles:
 Ever since I completed my internship this fall, I've been eager to revamp my porfolio.
 
 I'm going for a dark theme this time and incorporating more 
-::
-
-::Divider
----
-firstLine: 'Concept'
-secondLine: 'Phase'
----
-::
-
-::TextBlock
----
-title: 'Bringing the concept to life'
----
-Fakka strijders, hier staat heel veel tekst
 ::
