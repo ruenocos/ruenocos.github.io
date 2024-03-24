@@ -5,7 +5,7 @@ title: Test Artikel
 primaryImage: /content/images/test-project/portfolio-details-main-image.jpg
 ---
 
-::ProjectSummary
+::project-summary
 ---
 client:
   label: Wessel Oud
@@ -13,38 +13,65 @@ client:
 roles:
   - Design
   - Branding
-url: 'https://google.com'
+url: https://google.com
 ---
 Ever since I completed my internship this fall, I've been eager to revamp my portfolio. Looking back at my portfolio from last year, I realized it felt flat and uninspiring. With that in mind, I decided to make a complete switch.
 
 I'm going for a dark theme this time and incorporating more animations. The reason behind this transformation is my growing interest in motion design, and I wanted my portfolio to reflect that.
 ::
 
-::Divider
----
-firstLine: 'Concept'
-secondLine: 'Phase'
----
+::divider{first-line="Concept" second-line="Phase"}
 ::
 
-::TextBlock
----
-title: 'Bringing the concept to life'
----
+::text-block{title="Bringing the concept to life"}
 I'm going for a dark theme this time and incorporating more animations. The reason behind this transformation is my growing interest in motion design, and I wanted my portfolio to reflect that.
 ::
 
-::ImageGrid
+::image-grid
 ---
 offset: true
 ---
 #left
-:ImageGridItem{type="image" image="/content/images/test-project/colorpallete.jpg"}
-:ImageGridItem{type="text" text="I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision."}
-:ImageGridItem{type="image" image="/content/images/test-project/website_concept.jpg"}
+  :::image-grid-item
+  ---
+  image: /content/images/test-project/colorpallete.jpg
+  type: image
+  ---
+  :::
+
+  :::image-grid-item
+  ---
+  text: I began by seeking inspiration for colors, elements, typography, and other designs that resonated with my vision.
+  type: text
+  ---
+  :::
+
+  :::image-grid-item
+  ---
+  image: /content/images/test-project/website_concept.jpg
+  type: image
+  ---
+  :::
 
 #right
-:ImageGridItem{type="image" image="/content/images/test-project/text_example.jpg"}
-:ImageGridItem{type="text" text="After that, I began working on my concept, which involved utilizing elements from programs such as Adobe XD, Adobe Photoshop, and Figma."}
-:ImageGridItem{type="image" image="/content/images/test-project/image_concept_rounded.jpg"}
+  :::image-grid-item
+  ---
+  image: /content/images/test-project/text_example.jpg
+  type: image
+  ---
+  :::
+
+  :::image-grid-item
+  ---
+  text: After that, I began working on my concept, which involved utilizing elements from programs such as Adobe XD, Adobe Photoshop, and Figma.
+  type: text
+  ---
+  :::
+
+  :::image-grid-item
+  ---
+  image: /content/images/test-project/image_concept_rounded.jpg
+  type: image
+  ---
+  :::
 ::
