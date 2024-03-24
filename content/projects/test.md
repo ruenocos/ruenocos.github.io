@@ -32,6 +32,13 @@ secondLine: 'Phase'
 title: 'Bringing the concept to life'
 ---
 I'm going for a dark theme this time and incorporating more animations. The reason behind this transformation is my growing interest in motion design, and I wanted my portfolio to reflect that.
+
+Text Block item:
+  :::ImageGridItem
+  ---
+  text: 'nog een blok'
+  ---
+  :::
 ::
 
 ::ImageGrid
