@@ -26,5 +26,9 @@ const data = defineProps<{
       background-size: 1.75rem 1.75rem;
       background-image: linear-gradient(var(--grid-color) 1px, transparent 1px), linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     }
+
+    img {
+      @apply w-full;
+    }
   }
 </style>
