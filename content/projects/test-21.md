@@ -2,14 +2,14 @@
 slug: test-21
 category: Website design
 title: Nieuw Artikel
-primaryImage: /content/images-content/portfolio-item-1.jpg
+primaryImage: /content/images/portfolio-item-1.jpg
 ---
 
 ::ProjectSummary
 ---
 client:
   label: Wessel Oud
-  image: /content/images-content/portfolio-item-1.jpg
+  image: /content/images/portfolio-item-1.jpg
 roles:
   - Test rol
   - Designer
