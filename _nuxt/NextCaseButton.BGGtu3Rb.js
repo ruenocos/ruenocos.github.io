@@ -1,1 +1,0 @@
-import t from"./Border.DXszoRlG.js";import{_ as o,o as c,q as n,w as r,m as _}from"./entry.C2wManJI.js";const a={};function s(f,m){const e=t;return c(),n(e,null,{default:r(()=>[_(" Next case ")]),_:1})}const u=o(a,[["render",s]]);export{u as default};
